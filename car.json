@@ -1,0 +1,3 @@
+var cars = `[{"model":"Tesla Model S","ez":"2015","price":"46000€","link":"https://www.willhaben.at/iad/gebrauchtwagen/d/auto/tesla-model-s-p85d-385948950","image":"./carimg/tesla3.jpeg"},
+			{"model":"Tesla Model X","ez":"2018","price":"78500€","link":"https://www.willhaben.at/iad/gebrauchtwagen/d/auto/tesla-model-x-x100d-385952767","image":"./carimg/teslas.jpeg"},
+			{"model":"Tesla Model S","ez":"2016","price":"78900€","link":"https://www.willhaben.at/iad/gebrauchtwagen/d/auto/tesla-model-s-70d-allrad-erweiterte-garantie-premium-schiebedach-helles-interieur-354675202","image":"./carimg/teslax.jpeg"}]`

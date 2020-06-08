@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<style>
+		
+		 .container1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 81vw;
+    margin-left: 2.5vw;
+    margin-right: 1.5vw; }
+
+  .column {
+    position: relative;
+    width: 25vw;
+    margin: 0.5vw;
+    height: 17vw; }
+
+  .first {
+    width: 100%;
+    height: 15vw; }
+
+  .description {
+    position: absolute;
+    bottom: 1vw;
+    left: 0vw;
+    padding: 0.5em;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 1.25em;
+    font-weight: normal;
+    text: justify-content; }
+	</style>
+</head>
+<body>
+<main>
+<!-- <div class="container1">
+            <div class="column">
+                <a href="article.html ">
+                    <img class="first" src="img/nasa.png" alt="nasa">
+                    <h4 class="description">Nasa id trying to squash conspiracy theories about the space station leak</h4>
+                </a>
+            </div>
+            <div class="column">
+                <a href="article.html ">
+                    <img class="first" src="img/eu.png" alt="eu">
+                    <h4 class="description">EU approves controversal Copyright Directive, Including Internet 'link tax!'</h4>
+                </a>
+            </div>
+            <div class="column">
+                <a href="article.html ">
+                    <img class="first" src="img/jeff.png" alt="jeff besos">
+                    <h4 class="description">Jeff Bezos is going to create schools where 'child is the customer'</h4>
+                </a>
+            </div>
+</div> -->
+</main>
+
+<script type="text/javascript" src="car.json"></script>
+<script type="text/javascript">
+var car =JSON.parse(cars);
+	
+	var i = 0
+		for (i = 0; i < car.length; i++) {
+    	document.write('<div class="column"><a href="'+car[i].link+'">link</a></div>')
+		console.log(car[i].link)
+	}
+
+
+
+    //                 <img class="first" src="img/nasa.png" alt="nasa">
+    //                 <h4 class="description">Nasa id trying to squash conspiracy theories about the space station leak</h4>
+    //             </a>
+    //         </div>
+
+    //         <br><table style width=400 border=1><tr><td width=200 rowspan=7>" + team[i].image + "</td></tr>");
+    // document.write("<tr><td width=200>" + team[i].fn + "</td></tr>");
+    // document.write("<tr><td width=200>" + team[i].ln + "</td></tr>");
+    // document.write("<tr><td width=200>" + team[i].telefon + "</td></tr>");
+    // document.write("<tr><td width=200>" + team[i].email + "</td></tr>");
+    // document.write("<tr><td width=200>" + team[i].profession + "</td></tr>");
+    // document.write('<tr><td width=200><button onclick=result' + team[i].about + '()>More Information</button></td></tr></table><br>');
+    // document.write('<table><tr><td><div id="' + team[i].about + '"></div></td></tr></table><br>');}
+
+</script>
+</body>
+</html>
