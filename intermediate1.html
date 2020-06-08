@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var employees =  [{"userId": "11", "firstName": "koala", "lastName": "koala", "email": "k@k.at", "jobTitle" : "doctor", "Salary" : "10000$"},
+						{"userId": "12", "firstName": "Zumrut", "lastName": "Ekinci", "email": "zu@ek.at", "jobTitle" : "Analyst", "Salary" : "15000$"},
+					{"userId": "13", "firstName": "Bruno", "lastName": "Mairey", "email": "bu@ma.at", "jobTitle" : "tester", "Salary" : "6000$"},
+					{"userId": "14", "firstName": "AA", "lastName": "GG", "email": "aa@aa.at", "jobTitle" : "doctor", "Salary" : "7000$"},
+					{"userId": "15", "firstName": "BB", "lastName": "HH", "email": "bb@bb.at", "jobTitle" : "nurse", "Salary" : "8000$"},
+					{"userId": "16", "firstName": "CC", "lastName": "II", "email": "cc@cc.at", "jobTitle" : "taxidriver", "Salary" : "9000$"},
+					{"userId": "17", "firstName": "DD", "lastName": "JJ", "email": "dd@dd.at", "jobTitle" : "busdriver", "Salary" : "10000$"},
+					{"userId": "18", "firstName": "EE", "lastName": "Koala", "email": "ee@ee.at", "jobTitle" : "employee", "Salary" : "11000$"},
+					{"userId": "19", "firstName": "FF", "lastName": "LL", "email": "ff@ff.at", "jobTitle" : "lawyer", "Salary" : "12000$"},
+					{"userId": "20", "firstName": "Cornelia", "lastName": "Franta", "email": "co@fr.at", "jobTitle" : "teacher", "Salary" : "55000$"}];
+    console.log(employees) 
+
+    	var i = 0
+   		  
+   		  document.writeln("<table border='1'>");
+        	 document.writeln("<tr><th>userId</th><th>firstName</th><th>lastName</th><th>email</th><th>jobTitle</th><th>Salary</th>")
+   		  for (i = 0; i < employees.length; i++) {
+        	 document.writeln("<tr><td width=100>" + employees[i].userId + "</td>");
+        document.writeln("<td width=100>" + employees[i].firstName + "</td>");
+        document.writeln("<td width=100>" + employees[i].lastName + "</td>");
+        document.writeln("<td width=100>" + employees[i].email + "</td>");
+        document.writeln("<td width=100>" + employees[i].jobTitle + "</td>");
+        document.writeln("<td width=100>" + employees[i].Salary + "</td></tr>");
+}
+
+        document.writeln("</table>");
+     
+
+</script>
+</body>
+</html>
+
+
