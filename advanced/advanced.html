@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+<script>
+    function loadJSON(path_to_json, callback) {
+
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', path_to_json, true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+    function createBookList(response) {
+        // Parse JSON string into object
+        var books = JSON.parse(response);
+        document.writeln('<div id="main">');
+        document.writeln('<ul>');
+        for (i = 0; i < books.length; i++) {
+            document.writeln("<div class='item'>");
+            document.writeln('<li>');
+        	 document.writeln(`<p ><h1 class="heading" id='${books[i].title}'>${books[i].title}</h1></p>`);
+
+             document.writeln(`<p id="author">${books[i].author}</p>`);
+             document.writeln(`<img src="${books[i].image}" alt="picture">`);
+             document.writeln('</li>');
+             document.writeln('</div>');
+
+             var heading= document.getElementById(books[i].title);
+            console.log(heading);
+
+            if (books[i].readIt === 'true'){
+                console.log('if');
+                heading.style.color= 'green';
+            } else{
+                    heading.style.color= 'red';}
+
+
+        }
+        document.writeln('</ul>');
+        document.writeln('</div>')
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    loadJSON("advanced.json", createBookList);
+
+
+</script>
+
+
+
+</body>
+</html>

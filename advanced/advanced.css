@@ -1,0 +1,16 @@
+#main{
+        width: 90%;
+        margin: auto;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+.item{
+        width: 60%;
+        background-color: white;
+    }
+.heading{
+        text-align: center;
+        font-family: Arial sans-serif;
+        }

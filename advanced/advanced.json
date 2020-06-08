@@ -1,0 +1,32 @@
+[{
+        "title":"book1",
+        "author":"author1",
+        "image":"./Images/flannery.jpg",
+        "readIt":"false"
+
+}, {
+        "title":"book2",
+        "author":"author2",
+        "image":"./Images/harrypotterbook1.jpg",
+        "readIt":"false"
+}, {
+        "title":"book3",
+        "author":"author3",
+        "image":"./Images/harrypotterbook2.jpg",
+        "readIt":"true"
+}, {
+        "title":"book4",
+        "author":"author4",
+        "image":"./Images/harrypotterbook3.jpg",
+        "readIt":"false"
+}, {
+        "title":"book5",
+        "author":"author5",
+        "image":"./Images/harrypotterbook4.jpeg",
+        "readIt":"true"
+}, {
+        "title":"book6",
+        "author":"author6",
+        "image":"./Images/orhan.jpg",
+        "readIt":"false"
+}]
